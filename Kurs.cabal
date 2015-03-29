@@ -20,10 +20,14 @@ executable Kurs
   other-modules:       Helpers
                        Generators
                        Types
+                       GeneticAlgorithm
+                       GeneticMinimization
   -- other-extensions:    
   build-depends:       base >=4.6 && <4.7,
                        random,
-                       transformers
+                       transformers,
+                       parallel,
+                       deepseq
   hs-source-dirs:      src
                        src/Utils
   default-language:    Haskell2010
